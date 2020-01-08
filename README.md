@@ -1,21 +1,34 @@
-# NestJS NPM 包项目模板
+# NestJS CtripApolloClientModule
 
-## 使用方法
+携程 [Apollo 配置中心](https://github.com/ctripcorp/apollo) NestJS 客户端
 
-1. Git克隆此项目到本地
-2. 修改项目名字，及项目内 package.json 中需要替换的名字
+## 安装
 
 ```bash
-cd nestjs-package-starter
-npm install
-
-# 编译
-npm build
-
-# 发布
-npm publish
+npm install nestjs-ctrip-apollo-client
 ```
 
-## 详细教程
+## 使用
 
-[NestJS NPM模块开发指南](https://conflu.seeapp.com/pages/viewpage.action?pageId=20683948)
+```
+import { Module } from '@nestjs/common';
+import { CtripApolloClientModule } from 'nestjs-ctrip-apollo-client';
+
+@Module({
+  imports: [
+    CtripApolloClientModule.register({
+      configServerUrl: 'http://xxx.xxx.xxx.xxx',
+      appId: 'my-app',
+      cluster: 'default',
+      namespaces: ['application'],
+      initialConfigs: {},
+      listenOnNotification: true,
+      fetchCacheInterval: 5 * 60e3,
+      cachedConfigFilePath: '/tmp',
+    }),
+  ],
+  providers: [],
+})
+export class AppModule {}
+```
+
