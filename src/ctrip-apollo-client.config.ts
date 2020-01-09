@@ -1,10 +1,10 @@
 export class CtripApolloClientConfig {
-  configServerUrl = '';
-  appId = '';
-  cluster = 'default';
-  namespaces = ['application'];
-  initialConfigs = {};
-  listenOnNotification = true;
-  fetchCacheInterval = 5 * 60e3;
-  cachedConfigFilePath = '/tmp';
+  configServerUrl: string;
+  appId: string;
+  cluster?: string;
+  namespaces?: string[];
+  initialConfigs?: any;
+  listenOnNotification?: boolean;
+  fetchCacheInterval?: number;
+  cachedConfigFilePath?: string;
 }

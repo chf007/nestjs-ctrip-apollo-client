@@ -1,6 +1,6 @@
 # NestJS CtripApolloClientModule
 
-携程 [Apollo 配置中心](https://github.com/ctripcorp/apollo) NestJS 客户端
+携程 [Apollo 配置中心](https://github.com/ctripcorp/apollo) NestJS 客户端，基于[node-apollo-client](https://github.com/shinux/node-apollo-client)封装。
 
 ## 安装
 

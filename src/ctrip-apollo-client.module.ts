@@ -1,10 +1,10 @@
-import { DynamicModule, Global, HttpModule, Module } from '@nestjs/common';
+import { DynamicModule, Global, Module } from '@nestjs/common';
 import { CtripApolloClientConfig } from './ctrip-apollo-client.config';
 import { CtripApolloClientService } from './ctrip-apollo-client.service';
 
 @Global()
 @Module({
-  imports: [HttpModule],
+  imports: [],
   providers: [CtripApolloClientService, CtripApolloClientConfig],
   exports: [CtripApolloClientService, CtripApolloClientConfig],
 })

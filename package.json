@@ -1,6 +1,6 @@
 {
   "name": "nestjs-ctrip-apollo-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS Module for Ctrip Apollo",
   "author": "chf007 <chf007server@163.com>",
   "license": "MIT",
